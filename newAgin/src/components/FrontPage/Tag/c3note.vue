@@ -26,17 +26,10 @@
     },
     created(){
         console.log(this.$http)
-  /*    $.ajax({
-        url:'/asa',
-        type:'get',
-        success:function(res){
-            console.log(res.data,'resss')
-        }
-      })*/
-       this.$http.get('/asa').then(res=>{
-           this.tagAry=res.body
-         console.log(this.tagAry,'TAG')
-       })
+      this.$http.get('/api/c3p').then(res=>{
+        this.tagAry=res.data
+        console.log(res,'TAG')
+      })
     }
   }
 </script>

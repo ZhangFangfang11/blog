@@ -32,16 +32,16 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/asa':'http://localhost:4000',
-      '/aaa':'http://localhost:4000',
-/*       '/api':{
-         target:'http://localhost:4000',
-         changeOrigin:true,
+      // '/asa':'http://localhost:5500',
+      // '/aaa':'http://localhost:5500',
+       '/api':{
+         target:'http://localhost:3000',
+         // changeOrigin:true,
          pathRewrite:{
            // '^/api':''
-           '^/api':''
+           '^/api':'/api'
          }
-       }*/
+       }
     },
 
     cssSourceMap: false
