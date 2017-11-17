@@ -34,8 +34,9 @@ export default {
   background:rgb(227,227,229) url("./assets/img/bg.jpg")no-repeat 90% 20%;
 
 }
-body{
+body,html{
   font-family: 'Arizonia', cursive;
+  background-color: rgb(227,227,229);
 }
   .main{
     width:1200px;

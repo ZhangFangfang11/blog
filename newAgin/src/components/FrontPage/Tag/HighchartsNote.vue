@@ -6,7 +6,7 @@
         <span>时间 :{{item.tagTime}}</span>
       </div>
       <div slot="conMain" class="tc">
-        {{item.tagContent}}
+        {{item.tagJian}}
       </div>
     </my-slot>
   </div>
@@ -20,15 +20,13 @@
     },
     data(){
       return {
-        tagAry: [{
-          id: 1,
-          tagName: 'Highcharts',
-          tagTitle: 'Highcharts介绍',
-          tagContent: "<router-link> 组件支持用户在具有路由功能的应用中（点击）导航。 通过 to 属性指定目标地址，默认渲染成带有正确链接的 <a> 标签，标签，可以通过配置 tag 标签，可以通过配置 tag 标签，可以通过配置 tag 标签，可以通过配置 tag 可以通过配置 tag 属性生成别的标签.。另外，当目标路由成功激活时，链接元素自动设置一个表示激活的 CSS 类名。",
-          tagTime: '2017-11-10'
-        },
-          ]
+        tagAry: []
       }
+    },
+    created(){
+        this.$http.get('/api/highp').then(res=>{
+            this.tagAry=res.data;
+        })
     }
   }
 </script>

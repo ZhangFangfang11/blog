@@ -2,11 +2,11 @@
   <div>
     <my-slot  v-for="(item,index) in tagAry" :key="index">
       <div slot="header" class="tt">
-        <router-link :to="{path: '/note/vnote',params:{id:item.id}}">{{item.tagTitle}}</router-link>
+        <router-link  :to="{name: 'vuechild',params:{id:item.id}}">{{item.tagTitle}}</router-link>
         <span>时间 :{{item.tagTime}}</span>
       </div>
       <div slot="conMain" class="tc">
-        {{item.tagContent}}
+        {{item.tagJian}}
       </div>
     </my-slot>
   </div>
@@ -20,14 +20,15 @@
     },
     data(){
       return {
+          aa:null,
         tagAry: []
       }},
     created(){
         this.$http.get('/api/vuep').then(res=>{
             this.tagAry=res.data;
-            console.log(this.tagAry)
         })
-    }
+    },
+
   }
 </script>
 

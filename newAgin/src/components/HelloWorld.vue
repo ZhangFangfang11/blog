@@ -1,6 +1,6 @@
 <template>
-  <div class="hello">
-    <div id="box">
+  <div >
+    <div id="mapId">
     </div>
   </div>
 </template>
@@ -19,7 +19,7 @@
     },
     methods: {
       aa(){
-        var myChart = echarts.init(document.getElementById('box'));
+        var myChart = echarts.init(document.getElementById('mapId'));
         var lines = rawData.track.slice(0, rawData.track.length - 1).map(function (seg, idx) {
           return [{
             coord: seg.coord,
@@ -238,16 +238,9 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style >
-  #box {
-    background-color: pink;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    width: 600px;
-    height: 600px;
+  #mapId {
+    width: inherit;
+    height: 500px;
   }
   .anchorBL img{
     display: none;
@@ -255,21 +248,5 @@
 .BMap_noprint span{
   font-size: 0;
 }
-  h1, h2 {
-    font-weight: normal;
-  }
 
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-
-  a {
-    color: #42b983;
-  }
 </style>

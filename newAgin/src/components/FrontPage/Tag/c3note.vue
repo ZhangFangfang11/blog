@@ -6,7 +6,7 @@
         <span>时间 :{{item.tagTime}}</span>
       </div>
       <div slot="conMain"  class="tc">
-        {{item.tagContent}}
+        {{item.tagJian}}
       </div>
     </my-slot>
   </div>
@@ -25,10 +25,8 @@
       }
     },
     created(){
-        console.log(this.$http)
       this.$http.get('/api/c3p').then(res=>{
         this.tagAry=res.data
-        console.log(res,'TAG')
       })
     }
   }

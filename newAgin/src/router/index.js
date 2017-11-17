@@ -59,76 +59,63 @@ export default new Router({
           path:'vnote',
           name:'vueNote',
           component:vueNote,
-          children:[
-            {
-              path:'vuechild/:id',
-              name:'vuechild',
-              component:vuechild
-            }
-          ]
+        },
+        {
+          path:'vuechild/:id',
+          name:'vuechild',
+          component:vuechild
         },
         {
           path:'cnote',
           name:'CNote',
           component:CNote,
-          children:[
-            {
-              path:'c3child/:id',
-              name:'c3child',
-              component:CNoteChild
-            }
-          ]
+        },
+        {
+          path:'c3child/:id',
+          name:'c3child',
+          component:CNoteChild
         },
         {
           path:'echart',
           name:'EchartsNote',
           component:EchartsNote,
-          children:[
-            {
-              path:'echild/:id',
-              name:'EchartsChild',
-              component:EchartsChild
-            }
-          ]
+
+        },
+        {
+          path:'echild/:id',
+          name:'EchartsChild',
+          component:EchartsChild
         },
         {
           path:'highchart',
           name:'HighchartsNote',
           component:HighchartsNote,
-          children:[
-            {
-              path:'hchild/:id',
-              name:'HighchartsChild',
-              component:HighchartsChild
-            }
-          ]
+        },
+        {
+          path:'hchild/:id',
+          name:'HighchartsChild',
+          component:HighchartsChild
         },
         {
           path:'hnote',
           name:'HtmlNote',
           component:HtmlNote,
-          children:[
-            {
-              path:'hchild/:id',
-              name:'Htmlchild',
-              component:Htmlchild
-            }
-          ]
+        },
+        {
+          path:'hchild/:id',
+          name:'Htmlchild',
+          component:Htmlchild
         },
         {
           path:'jsnote',
           name:'jsNote',
           component:jsNote,
-          children:[
-            {
-              path:'jschild/:id',
-              name:'jschild',
-              component:jschild
-            }
-          ]
         },
-
-
+        {
+          path:'jschild/:id',
+          name:'jschild',
+          component:jschild
+        }
       ]
     },
     {

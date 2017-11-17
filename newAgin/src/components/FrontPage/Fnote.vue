@@ -53,7 +53,9 @@
       </ul>
     </div>
     <div class="noteR">
+
       <router-view></router-view>
+
     </div>
   </div>
 </template>
@@ -66,9 +68,10 @@
     },
     data(){
         return {
-
+aa:null
         }
-    }
+    },
+
   }
 </script>
 
@@ -95,23 +98,22 @@
     border-bottom: 1px solid #555;
     font-family: 'Arizonia', cursive;
   }
-  .noteL .tag li {
-    padding: 5px 0;
-  }
-  .noteL .tag li:nth-child(1) {
+
+  .noteL .tag >li:nth-child(1) {
     padding: 0;
   }
-  .noteL .tag li > a {
+  .noteL .tag >li > a {
     color: #000;
+    padding: 5px 10px;
     font-size: 14px;
     line-height: 16px;
     display: inline-block;
     width:100%;
+    box-sizing: border-box;
   }
-  .noteL .tag li > a.active{
+  .noteL .tag >li > a.active{
     color: blue;
   }
-
   .noteR {
     float: right;
     width:980px;

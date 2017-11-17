@@ -65,7 +65,7 @@ h1 a{
     position: relative;
     margin-top: 60px;
     list-style: none;
-    padding: 0 10%;
+    padding: 0 6%;
     box-sizing: border-box;
   }
   .list li {

@@ -10,11 +10,13 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "animate.css": "^3.5.2",
     "axios": "^0.17.0",
     "bmap": "^1.0.1",
     "echarts": "^3.7.2",
     "element-ui": "^2.0.3",
     "jquery": "^3.2.1",
+    "moment": "^2.19.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
