@@ -14,6 +14,8 @@ import HighchartsNote from '@/components/FrontPage/Tag/HighchartsNote.vue'
 import HtmlNote from '@/components/FrontPage/Tag/HtmlNote.vue'
 import jsNote from '@/components/FrontPage/Tag/jsNote.vue'
 import vueNote from '@/components/FrontPage/Tag/vueNote.vue'
+
+
 //note 子路由里面的子路由
 import CNoteChild from '@/components/FrontPage/Tag/tagchild/c3noteChild.vue'
 import EchartsChild from '@/components/FrontPage/Tag/tagchild/EchartsChild.vue'
@@ -21,7 +23,7 @@ import HighchartsChild from '@/components/FrontPage/Tag/tagchild/HighchartsChild
 import Htmlchild from '@/components/FrontPage/Tag/tagchild/Htmlchild.vue'
 import jschild from '@/components/FrontPage/Tag/tagchild/jschild.vue'
 import vuechild from '@/components/FrontPage/Tag/tagchild/vuechild.vue'
-
+import photoChild from '@/components/FrontPage/Tag/tagchild/photoChild.vue'
 
 
 Vue.use(Router);
@@ -121,8 +123,13 @@ export default new Router({
     {
       path: '/photo',
       name: 'Fphoto',
-      component: Fphoto
+      component: Fphoto,
+      children:[]
     },
-
+    {
+      path:'/photoc/:id',
+      name:'photoc',
+      component:photoChild
+    }
   ]
 })

@@ -1,6 +1,5 @@
 <template>
     <div class="neirong">
-
           <el-container>
               <el-header style="height: 40px">
               <slot name="header"></slot>
@@ -27,7 +26,7 @@
 </script>
 
 <style>
-  .el-header{
+.el-header{
     position: relative;
     background-color:#f0cd78;
     color: #333;

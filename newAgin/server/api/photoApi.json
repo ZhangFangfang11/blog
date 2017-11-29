@@ -1,0 +1,87 @@
+[
+  {
+    "Ptype": 1,
+    "Pname": "我的相册",
+    "Purl": "../../../static/img/1.jpg",
+    "Plist": [
+      {
+        "id": 1,
+        "PlistName": "我的我",
+        "PlistUrl": "../../../static/img/1.jpg"
+      },
+      {
+        "id": 2,
+        "PlistName": "我的",
+        "PlistUrl": "../../../static/img/2.jpg"
+      }
+    ]
+  },
+  {
+    "Ptype": 3,
+    "Pname": "相册",
+    "Purl": "../../../static/img/4.jpg",
+    "Plist": [
+      {
+        "id": 1,
+        "PlistName": "我的我",
+        "PlistUrl": "../../../static/img/1.jpg"
+      },
+      {
+        "id": 2,
+        "PlistName": "我的",
+        "PlistUrl": "../../../static/img/2.jpg"
+      }
+    ]
+  },
+  {
+    "Ptype": 2,
+    "Pname": "我的相册",
+    "Purl": "../../../static/img/2.jpg",
+    "Plist": [
+      {
+        "id": 1,
+        "PlistName": "我的我",
+        "PlistUrl": "../../../static/img/2.jpg"
+      },
+      {
+        "id": 2,
+        "PlistName": "我的",
+        "PlistUrl": "../../../static/img/3.jpg"
+      }
+    ]
+  },
+  {
+    "Ptype": 3,
+    "Pname": "我的相册",
+    "Purl": "../../../static/img/3.jpg",
+    "Plist": [
+      {
+        "id": 1,
+        "PlistName": "我的我",
+        "PlistUrl": "../../../static/img/3.jpg"
+      },
+      {
+        "id": 2,
+        "PlistName": "我的",
+        "PlistUrl": "../../../static/img/4.jpg"
+      }
+    ]
+  },
+  {
+    "Ptype": 4,
+    "Pname": "我的相册",
+    "Purl": "../../../static/img/4.jpg",
+    "Plist": [
+      {
+        "id": 1,
+        "PlistName": "我的我",
+        "PlistUrl": "../../../static/img/4.jpg"
+      },
+      {
+        "id": 2,
+        "PlistName": "我的",
+        "PlistUrl": "../../../static/img/1.jpg"
+      }
+    ]
+  }
+]

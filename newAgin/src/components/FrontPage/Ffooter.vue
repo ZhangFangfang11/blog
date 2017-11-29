@@ -17,7 +17,7 @@
     background-color: #B3C0D1;
     color: #333;
     text-align: center;
-    line-height: 60px;
+    line-height: 40px;
     margin-bottom:0;
   }
   footer{
@@ -28,7 +28,7 @@
     background-color: #ced1d5;
     color: #333;
     text-align: center;
-    line-height: 60px;
+    line-height: 40px;
 
   }
 </style>

@@ -6,11 +6,10 @@ import router from './router'
 import $ from 'jquery'
 import axios from 'axios'
 import "animate.css"
-
-
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-Vue.use(ElementUI)
+Vue.use(ElementUI);
+
 Vue.config.productionTip = false
 var $http=axios.create({})
 Vue.prototype.$http=$http;

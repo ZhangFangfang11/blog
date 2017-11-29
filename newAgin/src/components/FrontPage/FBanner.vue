@@ -292,7 +292,7 @@
     -ms-backface-visibility: hidden;
   }
 
-  img {
+  #container>img {
     position: absolute;
     left: 0;
     right: 0;

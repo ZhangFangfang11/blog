@@ -10,6 +10,7 @@
 <script>
   import Fheader from '@/components/FrontPage/Fheader'
   import Ffooter   from '@/components/FrontPage/Ffooter'
+
 export default {
   name: 'app',
   components:{

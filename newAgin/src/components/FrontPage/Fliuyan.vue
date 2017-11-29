@@ -88,7 +88,7 @@
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 8%;
+    bottom: 5%;
     margin: auto;
     width: 600px;
     height: 500px;

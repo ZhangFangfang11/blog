@@ -10,6 +10,7 @@ let htmlApi=require('./api/htmlApi.js');
 let highApi=require('./api/highApi.js');
 let echartApi=require('./api/echartsApi.js');
 let lyApi=require('./api/lyApi.js');
+let photoApi=require('./api/photoApi.js')
 var bodyParser = require('body-parser')  ////默认情况下Express并不知道该如何处理该请求体，因此我们需要增加bodyParser中间件，用于分析
 //application/x-www-form-urlencoded和application/json
 //请求体，并把变量存入req.body。我们可以像下面的样子来“使用”中间件[这个保证POST能取到请求参数的值]：
@@ -136,4 +137,23 @@ app.get('/api/lyp',(req,res)=>{
   lyApi.readLy(result=>{
     res.send(result)
   })
+})
+
+
+// 相册
+app.get('/api/papi',(req,res)=>{
+  var {pathname,query}=url.parse(req.url,true);
+  var pid=query.id;
+  if(pid){
+    photoApi.readPhoto(result=>{
+      var ps=result.find(item=>item.Ptype==pid)
+      res.send(ps)
+    })
+  }else{
+    photoApi.readPhoto(result=>{
+      res.send(result)
+    })
+  }
+
+
 })
