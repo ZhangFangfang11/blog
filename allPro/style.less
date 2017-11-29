@@ -1,0 +1,56 @@
+.proStl{
+  position: relative;
+  width:100%;
+  height:100%;
+  .msg {
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+    z-index: 900;
+    p {
+      display: block;
+      text-decoration: none;
+      font-size: 0.9em;
+      height: 32px;
+      line-height: 32px;
+      cursor: pointer;
+      &.focueY {
+        color: yellow;
+      }
+      &.focueW {
+        color: #fff;
+      }
+      i {
+        position: relative;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        margin-right: 10px;
+        vertical-align: middle;
+        &.focueY {
+          background-color:  yellow;
+        }
+        &.focueW {
+          background-color: #fff;
+        }
+
+      }
+    }
+
+  }
+  .allPro{
+    margin: 0;
+    position: absolute;
+    top:0;
+    left:0;
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    height: 90%;
+    //height:80%;
+
+  }
+}

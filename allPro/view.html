@@ -1,0 +1,77 @@
+<!-- @mouseover="over"  @mouseout="out"-->
+<div style="width: 100%;height: 100%;" id="als">
+    <!--左上角   中国/ 山东  -->
+    <div class="retPro" style="z-index:999;position: absolute;top:50px;left:10px;display: block;">
+        <a href="javascript:void(0);" @click.stop.prevent="goBackChinaMap()"
+           style="height:30px;line-height: 30px;padding:5px 10px;margin-left:20px;cursor: pointer;color:#e4d00c;text-decoration:none;font-size: 18px">
+            中国
+        </a>
+    </div>
+    <div class="retPro" style="z-index:900;position: absolute;top:50px;left:50px;">
+        <a href="javascript:void(0);"
+           style="height:30px;line-height: 30px;padding:5px 10px;margin-left:20px;cursor: pointer;color:#e4d00c;text-decoration:none;font-size: 18px">
+            / {{curProName}}
+        </a>
+    </div>
+    <div class="msg" v-if="proName">
+        <p    @click="changeInfo($event)"
+              :class="[changeAttack?'focueY':'focueW']">
+            <i   :class="[changeAttack?'focueY':'focueW']"></i>
+            检测器告警分类统计
+        </p>
+        <p @click="changeInfo($event)" :class="[changeAttack?'focueW':'focueY']"><i
+                :class="[changeAttack?'focueW':'focueY']"></i>检测器告警处置统计
+        </p>
+    </div>
+<!--从下来列表里面选择的数据的 如果有则显示-->
+    <div class="msg" v-if="selectedData.length">
+        <p    @click="changeInfo($event)"
+              :class="[changeAttack?'focueY':'focueW']">
+            <i   :class="[changeAttack?'focueY':'focueW']"></i>
+            检测器告警分类统计
+        </p>
+        <p @click="changeInfo($event)" :class="[changeAttack?'focueW':'focueY']"><i
+                :class="[changeAttack?'focueW':'focueY']"></i>检测器告警处置统计
+        </p>
+    </div>
+    <div class="proStl"
+         id="proStl"
+         :pro-name="proName"
+       >
+
+    </div>
+
+    <!--饼图-->
+    <attack-count
+            v-if="changeAttack===true"
+            :child-name.sync="childName"
+            :pro-name.sync="proName"
+            :child-true.sync="childTrue"
+            :start-time.sync="stime"
+            :end-time.sync="etime"
+            :selected-data.sync="selectedData"
+            :selected-name.sync="selectedName"
+            :pin-yin.sync="pinyin"
+            :child-show.sync="childShow"
+            :interval-time="intervalTime"
+    ></attack-count>
+    <!--柱形图-->
+  <attack-disposed-count
+            v-else
+            :child-name.sync="childName"
+            :pro-name.sync="proName"
+            :start-time.sync="stime"
+            :end-time.sync="etime"
+            :selected-data.sync="selectedData"
+            :selected-name.sync="selectedName"
+            :child-show.sync="childShow"
+            :interval-time="intervalTime"
+    ></attack-disposed-count>
+    <!--:child-true.sync="childTrue"-->
+</div>
+
+
+
+
+
+
